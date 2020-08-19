@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/DarkGreen"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded_image_layer_list"
+            android:scaleType="centerCrop"
+            />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toEndOf="@id/imageView"
+            android:layout_toRightOf="@id/imageView"
+            android:textColor="@color/MustardYellow"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tool:text="username" />
+
+        <TextView
+            android:id="@+id/idTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTextView"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/imageView"
+            android:textColor="@color/DarkGrey"
+            android:textSize="18sp"
+            tool:text="user_id" />
+
+        <TextView
+            android:id="@+id/urlTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTextView"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/imageView"
+            android:layout_toRightOf="@id/imageView"
+            android:textColor="@color/DarkGrey"
+            android:textSize="18sp"
+            android:autoLink="web"
+            tool:text="urlLink"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DarkGreen"
+            android:id="@+id/followers"
+            android:text=""
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DarkGreen"
+            android:id="@+id/following"
+            android:text=""
+            android:visibility="gone"
+
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

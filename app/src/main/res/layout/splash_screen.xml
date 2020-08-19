@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This a "Splash Screen" XML file, here all the text view, Image view are laid in a linearly fashion inside the Linear layout. The reason of linear layout is for accurately placing the logo and the progress bar without happen to use the constraints -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkBlue"
+    android:orientation="vertical">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splash_animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:scaleType="centerInside"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/hello_hi" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_animation"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="Munch On"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="@color/PitchBlack" />
+
+
+</LinearLayout>

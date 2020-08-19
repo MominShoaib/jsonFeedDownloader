@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="PitchBlack">#000000</color>
+    <color name="DarkGrey">#9a9a9a</color>
+    <color name="LightGrey">#a9a9a9</color>
+    <color name="MustardYellow">#a9a308</color>
+    <color name="DarkGreen">#094745</color>
+    <color name="White">#ffffff</color>
+    <color name="DarkBlue">#0D426E</color>
+
+</resources>
